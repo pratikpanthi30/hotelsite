@@ -6,6 +6,7 @@
 }
 html{
   scroll-behavior: smooth;
+  
 }
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -45,6 +46,9 @@ header p {
 }
 
 /* Navigation */
+#about{
+  scroll-margin-top:100px ;
+}
 nav {
   background: #d35400;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -109,6 +113,9 @@ section h2 {
 }
 
 /* Rooms */
+#rooms{
+  scroll-margin-top: 100px;
+}
 .rooms-container {
   display: flex;
   gap: 25px;
@@ -146,6 +153,9 @@ section h2 {
 }
 
 /* Amenities */
+#amenities{
+  scroll-margin-top:100px ;
+}
 #amenities h2{
   margin-top: 10vh;
   text-decoration: underline;
@@ -175,6 +185,9 @@ section h2 {
 }
 
 /* Gallery */
+#gallery{
+  scroll-margin-top:100px ;
+}
 #gallery h2{
   margin-top: 6vh;
  text-decoration: underline;
