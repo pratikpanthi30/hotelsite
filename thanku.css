@@ -1,0 +1,83 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background with subtle mountain image and overlay */
+.confirmation-bg {
+  background: linear-gradient(rgba(44,62,80,0.7), rgba(211,84,0,0.6)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Centered confirmation box */
+.confirmation-container {
+  background: rgba(255,255,255,0.95);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 40px 30px 30px 30px;
+  text-align: center;
+  max-width: 350px;
+}
+
+/* Loader spinner */
+.loader {
+  border: 6px solid #e0e0e0;
+  border-top: 6px solid #d35400;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 24px auto;
+  animation: spin 1.2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+.confirmation-container h1 {
+  color: #d35400;
+  margin-bottom: 14px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+.confirmation-container p {
+  color: #333;
+  margin-bottom: 28px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.home-btn {
+  display: inline-block;
+  background: #d35400;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 7px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.home-btn:hover {
+  background: #e67e22;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .confirmation-container {
+    padding: 30px 10px 20px 10px;
+    max-width: 95vw;
+  }
+  .loader {
+    width: 40px;
+    height: 40px;
+    border-width: 4px;
+  }
+  .confirmation-container h1 {
+    font-size: 1.3rem;
+  }
+}
